@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Calculadora></Calculadora>
+  <QuePrefieres/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Calculadora from './components/Calculadora.vue'
+import QuePrefieres from './components/QuePrefieres.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Calculadora
+    Calculadora,
+    QuePrefieres
   }
 }
 </script>

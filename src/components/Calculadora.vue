@@ -60,10 +60,7 @@ export default {
 </script>
 
 <style>
-body {
-  background: url(../assets/background.jpg) no-repeat;
-  background-size: cover;
-}
+
 .container {
   display: flex;
   justify-content: center;
