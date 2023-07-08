@@ -1,13 +1,14 @@
 <template>
-  <PokemonPage/>
+  <NavBar/>
+  <router-view />
 </template>
 
 <script>
-import PokemonPage from "./modules/pokemon/pages/PokemonPage.vue"
+import NavBar from "./modules/pokemon/components/NavBar.vue";
 export default {
   name: "App",
   components: {
-    PokemonPage
+    NavBar,
   },
 };
 </script>
@@ -20,6 +21,5 @@ export default {
   text-align: center;
   color: #274868;
   margin-top: 60px;
-
 }
 </style>

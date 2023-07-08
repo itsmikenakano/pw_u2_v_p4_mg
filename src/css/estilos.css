@@ -1,3 +1,4 @@
-html, body {
-    background-color: rgb(209, 255, 136);
+html{
+    background: url("../modules/pokemon/store/bg_home.jpg");
+    background-size: cover;
 }

@@ -2,7 +2,7 @@
   <h1 v-if="!pokemonCorrecto">Espere por favor....</h1>
 
   <div v-else>
-    <div v-if="mostrarJuego == true">
+    <div class="juego" v-if="mostrarJuego == true">
       <h1>Juego Pokemon</h1>
       <div class="score">
         <h2>Puntaje: {{ puntaje }}</h2>
@@ -109,7 +109,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.juego h1, .juego h2{
+  color: #ffffff;
+  text-shadow: -1.2px -1.2px 0 #000000, 1.2px -1.2px 0 #000000,
+    -1.2px 1.2px 0 #000000, 1.2px 1.2px 0 #000000;
+}
 .score {
   display: flex;
   align-items: center;
@@ -133,11 +138,15 @@ export default {
 .win-message h1 {
   color: #44c9eb;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: -1.2px -1.2px 0 #ffffff, 1.2px -1.2px 0 #ffffff,
+    -1.2px 1.2px 0 #ffffff, 1.2px 1.2px 0 #ffffff;
 }
 
 .lose-message h1 {
   color: #d51b91;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: -1.2px -1.2px 0 #ffffff, 1.2px -1.2px 0 #ffffff,
+    -1.2px 1.2px 0 #ffffff, 1.2px 1.2px 0 #ffffff;
 }
 
 .win-message button:hover,
@@ -148,5 +157,23 @@ export default {
   background: rgb(139, 252, 237);
   font-size: 20px;
   margin-top: 15px;
+}
+
+.juego {
+  background: rgba(254, 219, 219, 0.5);
+  border: 6px double whitesmoke;
+  border-radius: 12px;
+}
+
+.win-message {
+  background: rgba(156, 240, 191, 0.5);
+  border: 6px double whitesmoke;
+  border-radius: 12px;
+}
+
+.lose-message {
+  background: rgba(251, 190, 209, 0.5);
+  border: 6px double whitesmoke;
+  border-radius: 12px;
 }
 </style>
